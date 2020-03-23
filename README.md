@@ -13,7 +13,7 @@ Here are the requirements for installing Docker.
   * [Install Docker Toolbox](https://docs.docker.com/toolbox/toolbox_install_windows/) instead
 
 ### Creating Containers:
-Follow the docker quick guide. A common problem with Windows is connecting your Docker container to your local file system. The following command should create a container:
+Follow the docker quick guide. A common problem with Windows is connecting your Docker container to your local file system. The following command creates a container on Linux (**do not use**):
 
   `$ docker run --name mongoserver -p 27017:27017 -v "$PWD":/home/data -d mongo`
 
