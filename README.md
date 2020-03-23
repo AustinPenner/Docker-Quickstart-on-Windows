@@ -16,9 +16,26 @@ Here are the requirements for installing Docker.
   * [Install Docker Toolbox](https://docs.docker.com/toolbox/toolbox_install_windows/) instead
 
 ### Creating Containers:
-Follow the docker quick guide. A common problem with Windows is connecting your Docker container to your local file system. The following command creates a container on Linux (**do not use**):
+Follow the docker quick guide. A common problem with Windows is connecting your Docker container to your local file system. Here's an example with mongodb:
 
-  `$ docker run --name mongoserver -p 27017:27017 -v "$PWD":/home/data -d mongo`
+1) If first time pulling image:    
+`$ docker pull mongo`
+
+2) Create the container, if not restarting one (note the backslashes):   
+`$ docker run --name mongoserver -p 27017:27017 -v c:\Users\username\galvanize:\home\data -d mongo`
+
+3) Remote into docker container shell:   
+`$ docker exec -it mongoserver bash`
+
+4) Access mongo shell:   
+`$ mongo`
+
+5) Stop the terminal:   
+`$ docker stop mongoserver`
+
+6) To restart:   
+`$ docker start mongoserver`
+
 
 Windows doesn't like "$PWD" to reference the current file path. Replace this with the full file path on your machine:
 
