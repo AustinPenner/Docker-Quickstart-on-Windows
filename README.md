@@ -25,7 +25,7 @@ Follow the docker quick guide. A common problem with Windows is connecting your 
 `$ docker pull mongo`
 
 2) Create the container, if not restarting one:   
-`$ docker run --name mongoserver -p 27017:27017 -v c:/Users/username/galvanize:/home/data -d mongo`
+`$ docker run --name mongoserver -p 27017:27017 -v /c/Users/username/galvanize:/home/data -d mongo`
 
 3) Remote into docker container shell:   
 `$ docker exec -it mongoserver bash`
