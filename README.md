@@ -12,6 +12,9 @@ Here are the requirements for installing Docker.
 
 * If you meet these requirements
   * [Install Docker Desktop](https://docs.docker.com/docker-for-windows/install/)
+  * Share your drives with Docker
+    * Go to the system tray, right click on Docker Desktop and select Settings
+    * Go to Resources -> File Sharing and select "C" (or whichever local drive you use)
 * If you don't meet these requirements (e.g. you have Windows 10 Home or below)
   * [Install Docker Toolbox](https://docs.docker.com/toolbox/toolbox_install_windows/) instead
 
