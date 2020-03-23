@@ -37,8 +37,4 @@ Follow the docker quick guide. A common problem with Windows is connecting your 
 `$ docker start mongoserver`
 
 
-Windows doesn't like "$PWD" to reference the current file path. Replace this with the full file path on your machine:
-
-  `$ docker run --name mongoserver -p 27017:27017 -v c:/Users/username/galvanize:/home/data -d mongo`
-
 From this point the usage is much the same across operating systems. You can use the docker [quick start guide](https://github.com/GalvanizeDataScience/lectures/blob/Austin/docker/docker_quick_guide.md) from here.
