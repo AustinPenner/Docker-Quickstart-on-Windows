@@ -7,6 +7,9 @@ Docker allows you to run Spark, SQL, and other Data Science tools. Installing Do
 ### Installing Docker:
 Here are the requirements for installing Docker. 
 
+
+![Docker Requirements](https://github.com/AustinPenner/Docker-Quickstart-on-Windows/blob/master/images/Docker%20Requirements%20(Windows).png "Docker Requirements")
+
 * If you meet these requirements
   * [Install Docker Desktop](https://docs.docker.com/docker-for-windows/install/)
 * If you don't meet these requirements (e.g. you have Windows 10 Home or below)
